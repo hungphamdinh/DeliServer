@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/shoppingcart"
+        />
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/edtKey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:layout_marginBottom="10dp"
+            android:weightSum="2"
+            >
+
+            <Button
+                android:id="@+id/btnChooseImage"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:padding="10dp"
+                android:text="Choose Image"
+                android:textColor="#fff"
+                android:textSize="15dp" />
+
+            <Button
+                android:layout_marginLeft="20dp"
+                android:id="@+id/btnAdd"
+                android:layout_width="0dp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="Add"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:textSize="15dp"
+
+                />
+        </LinearLayout>
+
+</LinearLayout>
